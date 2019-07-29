@@ -138,7 +138,6 @@
 
       push.on('registration', (data) => {
         localStorage.setItem("fcm_token", data.registrationId);
-        alert(data.registrationId);
       });
     }
     function onBackKeyDown(e) {
