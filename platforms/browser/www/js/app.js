@@ -13,7 +13,7 @@ var app  = new Framework7({
   },
   statusbar: {
     androidTextColor: '#FFFFFF',
-    androidBackgroundColor: '#FF0000',
+    androidBackgroundColor: '#A9A9A9',
   },
   dialog: {
     title: 'Blaze',

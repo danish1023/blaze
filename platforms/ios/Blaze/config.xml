@@ -67,4 +67,5 @@
     <preference name="PaginationMode" value="unpaginated" />
     <preference name="phonegap-version" value="cli-8.1.1" />
     <preference name="Orientation" value="portrait" />
+    <preference name="StatusBarBackgroundColor" value="#A9A9A9" />
 </widget>
