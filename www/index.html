@@ -122,24 +122,24 @@
     document.addEventListener("deviceready", onDeviceReady, false);
     document.addEventListener("backbutton", onBackKeyDown, false);
     function onDeviceReady() {
-      // const push = PushNotification.init({
-      //   android: {
-      //   },
-      //   browser: {
-      //     pushServiceURL: 'http://push.api.phonegap.com/v1/push'
-      //   },
-      //   ios: {
-      //     alert: "true",
-      //     badge: "true",
-      //     sound: "true"
-      //   },
-      //   windows: {}
-      // });
+      const push = PushNotification.init({
+        android: {
+        },
+        browser: {
+          pushServiceURL: 'http://push.api.phonegap.com/v1/push'
+        },
+        ios: {
+          alert: "true",
+          badge: "true",
+          sound: "true"
+        },
+        windows: {}
+      });
 
-      // push.on('registration', (data) => {
-      //   localStorage.setItem("fcm_token", data.registrationId);
-      //   alert(data.registrationId);
-      // });
+      push.on('registration', (data) => {
+        localStorage.setItem("fcm_token", data.registrationId);
+        alert(data.registrationId);
+      });
     }
     function onBackKeyDown(e) {
       e.preventDefault();
