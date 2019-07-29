@@ -1,0 +1,30 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "io.md.blaze"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "io.md.blaze"
+    },
+    "cordova-plugin-spinner": {
+      "PACKAGE_NAME": "io.md.blaze"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "io.md.blaze"
+    },
+    "cordova-plugin-x-toast": {
+      "PACKAGE_NAME": "io.md.blaze"
+    },
+    "phonegap-plugin-push": {
+      "PACKAGE_NAME": "io.md.blaze"
+    }
+  },
+  "dependent_plugins": {}
+}
