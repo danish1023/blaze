@@ -24,17 +24,17 @@
   <link rel="stylesheet" href="css/icons.css">
   <link rel="stylesheet" href="css/app.css">
 </head>
-<body>
+<body class="color-theme-deeppurple">
   <div id="app">
     <!-- Status bar overlay for fullscreen mode-->
     <div class="statusbar"></div>
     <!-- Left panel with cover effect-->
-    <div class="panel panel-left panel-cover theme-dark">
+    <div class="panel panel-left panel-cover">
       <div class="view">
         <div class="page">
           <div class="navbar">
             <div class="navbar-inner">
-              <div class="title">Left Panel</div>
+              <div class="title text-color-deeppurple"><img class="logo" src="images/logo.png" width="20"/> Blaze</div>
             </div>
           </div>
           <div class="page-content">
@@ -44,7 +44,7 @@
       </div>
     </div>
     <!-- Right panel with reveal effect-->
-    <div class="panel panel-right panel-reveal theme-dark">
+    <div class="panel panel-right panel-reveal">
       <div class="view">
         <div class="page">
           <div class="navbar">
@@ -72,7 +72,7 @@
                 <i class="icon material-icons md-only">menu</i>
               </a>
             </div>
-            <div class="title sliding">Blaze</div>
+            <div class="title sliding text-color-deeppurple no-margin"><img class="logo" src="images/logo.png" width="20"/> <span class="logo-title">Blaze</span></div>
             <!-- <div class="right">
               <a href="#" class="link icon-only panel-open" data-panel="right">
                 <i class="icon f7-icons ios-only">menu</i>
@@ -90,7 +90,7 @@
         </div> -->
         <!-- Scrollable page content-->
         <div class="page-content">
-          <div class="block-title searchbar-hide-on-search">Page Loaders & Router</div>
+          <div class="block-title searchbar-hide-on-search">Navigation</div>
           <div class="list links-list searchbar-hide-on-search">
             <ul>
               <li>
@@ -138,7 +138,6 @@
 
       push.on('registration', (data) => {
         localStorage.setItem("fcm_token", data.registrationId);
-        alert(data.registrationId);
       });
     }
     function onBackKeyDown(e) {

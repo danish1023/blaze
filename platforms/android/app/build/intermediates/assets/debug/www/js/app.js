@@ -6,7 +6,22 @@ var app  = new Framework7({
   root: '#app', // App root element
   id: 'io.md.blaze', // App bundle ID
   name: 'Framework7', // App name
-  theme: 'auto', // Automatic theme detection
+  theme: 'md', // Theme detection
+  view: {
+    animate: true,
+    xhrCache: false,
+  },
+  statusbar: {
+    androidTextColor: '#FFFFFF',
+    androidBackgroundColor: '#FF0000',
+  },
+  dialog: {
+    title: 'Blaze',
+  },
+  panel: {
+    swipe: 'left',
+    swipeOnlyClose: true,
+  },
   // App root data
   data: function () {
     return {
