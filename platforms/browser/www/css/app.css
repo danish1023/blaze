@@ -1,1 +1,5 @@
 /* Your app styles here */
+.panel-left .logo{
+    vertical-align: bottom;
+    padding-right: 5px;
+}
