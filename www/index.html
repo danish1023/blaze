@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <!--
@@ -11,8 +12,10 @@
       * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
           * Enable inline JS: add 'unsafe-inline' to default-src
   -->
-  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="theme-color" content="#2196f3">
@@ -24,6 +27,7 @@
   <link rel="stylesheet" href="css/icons.css">
   <link rel="stylesheet" href="css/app.css">
 </head>
+
 <body class="color-theme-deeppurple">
   <div id="app">
     <!-- Status bar overlay for fullscreen mode-->
@@ -34,11 +38,77 @@
         <div class="page">
           <div class="navbar">
             <div class="navbar-inner">
-              <div class="title text-color-deeppurple"><img class="logo" src="images/logo.png" width="20"/> Blaze</div>
+              <div class="title text-color-deeppurple"><img class="logo" src="images/logo.png" width="20" /> Blaze</div>
             </div>
           </div>
           <div class="page-content">
-            <div class="block">Left panel content goes here</div>
+            <div class="list components-list no-hairlines margin-top">
+              <ul>
+                <li>
+                  <a class="item-content item-link panel-close" href="#">
+                    <div class="item-media"> <i class="material-icons color-gray">info</i></div>
+                    <div class="item-inner">
+                      <div class="item-title">About Us</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="item-content item-link panel-close" href="#">
+                    <div class="item-media"> <i class="material-icons color-gray">forum</i></div>
+                    <div class="item-inner">
+                      <div class="item-title">FAQs</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="item-content item-link panel-close" href="#">
+                    <div class="item-media"> <i class="material-icons color-gray">phone</i></div>
+                    <div class="item-inner">
+                      <div class="item-title">Contact Us</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="accordion-item">
+                  <a href="#" class="item-link item-content">
+                    <div class="item-media"> <i class="material-icons color-gray">person</i>
+                    </div>
+                    <div class="item-inner">
+                      <div class="item-title">My Account</div>
+                    </div>
+                  </a>
+                  <div class="accordion-item-content">
+                    <div class="list">
+                      <ul>
+                        <li>
+                          <a href="#" class="item-link item-content panel-close">
+                            <div class="item-media"> <i class="material-icons color-gray">face</i></div>
+                            <div class="item-inner">
+                              <div class="item-title">Edit Profile</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="item-link item-content panel-close">
+                            <div class="item-media"> <i class="material-icons color-gray">vpn_key</i></div>
+                            <div class="item-inner">
+                              <div class="item-title">Change Password</div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a class="item-content item-link panel-close" href="#">
+                    <div class="item-media"> <i class="material-icons color-gray">exit_to_app</i></div>
+                    <div class="item-inner">
+                      <div class="item-title">Logout</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -72,7 +142,8 @@
                 <i class="icon material-icons md-only">menu</i>
               </a>
             </div>
-            <div class="title sliding text-color-deeppurple no-margin"><img class="logo" src="images/logo.png" width="20"/> <span class="logo-title">Blaze</span></div>
+            <div class="title sliding text-color-deeppurple no-margin"><img class="logo" src="images/logo.png"
+                width="20" /> <span class="logo-title">Blaze</span></div>
             <!-- <div class="right">
               <a href="#" class="link icon-only panel-open" data-panel="right">
                 <i class="icon f7-icons ios-only">menu</i>
@@ -117,7 +188,7 @@
   <!-- Your custom app scripts -->
   <script src="js/app.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment.min.js"></script>
-  
+
   <script>
     document.addEventListener("deviceready", onDeviceReady, false);
     document.addEventListener("backbutton", onBackKeyDown, false);
@@ -142,7 +213,7 @@
     }
     function onBackKeyDown(e) {
       e.preventDefault();
-      if (app.views.main.router.currentRoute.url == "/"){
+      if (app.views.main.router.currentRoute.url == "/") {
         navigator.app.exitApp();
       }
       else {
@@ -151,4 +222,5 @@
     }
   </script>
 </body>
+
 </html>
