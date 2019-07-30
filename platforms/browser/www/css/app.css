@@ -10,3 +10,6 @@
 .color-gray{
     color: gray;
 }
+.no-arrow:before {
+    display: none !important;
+}
