@@ -12,8 +12,8 @@ var app  = new Framework7({
     xhrCache: false,
   },
   statusbar: {
-    androidTextColor: 'black',
-    androidBackgroundColor: '#BEBEBE',
+    androidTextColor: 'white',
+    androidBackgroundColor: '#A9A9A9',
   },
   dialog: {
     title: 'Blaze',
