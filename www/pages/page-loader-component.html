@@ -8,7 +8,7 @@
             <span class="ios-only">Back</span>
           </a>
         </div>
-        <div class="title">Component Page</div>
+        <div class="title">{{title}}</div>
       </div>
     </div>
     <div class="page-content">
@@ -90,6 +90,15 @@
     // Component Data
     data: function () {
       // Must return an object
+      var self = this;
+      db.collection("users").get().then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+          console.log(doc.data().name);
+          self.$setState({
+            title: doc.data().name,
+          });
+        });
+      });
       return {
         name: 'Jimmy',
         age: 25,
