@@ -13,7 +13,8 @@
     </div>
     <div class="page-content">
       <div class="block block-strong">
-        <p>Component page is alos compiled with Template7, but it has much more functionality. In addition to Template7 page it has lifecycle hooks, events handling and data managment.</p>
+        <p>Component page is alos compiled with Template7, but it has much more functionality. In addition to Template7
+          page it has lifecycle hooks, events handling and data managment.</p>
         <p>It is useful to use Component page when you need page-specific logic.</p>
       </div>
       <div class="block-title">Events Handling</div>
@@ -68,37 +69,18 @@
 </style>
 <script>
   return {
-    // Lifecycle Hooks
-    beforeCreate() {
-      console.log('componentBeforeCreate', this)
-    },
-    created() {
-      console.log('componentCreated', this)
-    },
-    beforeMount() {
-      console.log('componentBeforeMount', this)
-    },
-    mounted() {
-      console.log('componentMounted', this);
-    },
-    beforeDestroy() {
-      console.log('componentBeforeDestroy', this);
-    },
-    destroyed() {
-      console.log('componentDestroyed', this);
-    },
     // Component Data
     data: function () {
-      // Must return an object
       var self = this;
-      db.collection("users").get().then((querySnapshot) => {
-        querySnapshot.forEach((doc) => {
-          console.log(doc.data().name);
-          self.$setState({
-            title: doc.data().name,
+      db.collection("users")
+        .onSnapshot(function (querySnapshot) {
+          querySnapshot.forEach(function (doc) {
+            self.$setState({
+              title: doc.data().name,
+            });
           });
         });
-      });
+      // Must return an object
       return {
         name: 'Jimmy',
         age: 25,
@@ -114,27 +96,9 @@
     },
     // Page Events
     on: {
-      pageMounted: function(e, page) {
-        console.log('pageMounted', page);
-      },
-      pageInit: function(e, page) {
+      pageInit: function (e, page) {
         console.log('pageInit', page);
-      },
-      pageBeforeIn: function(e, page) {
-        console.log('pageBeforeIn', page);
-      },
-      pageAfterIn: function(e, page) {
-        console.log('pageAfterIn', page);
-      },
-      pageBeforeOut: function(e, page) {
-        console.log('pageBeforeOut', page);
-      },
-      pageAfterOut: function(e, page) {
-        console.log('pageAfterOut', page);
-      },
-      pageBeforeRemove: function(e, page) {
-        console.log('pageBeforeRemove', page);
-      },
+      }
     }
   }
 </script>
