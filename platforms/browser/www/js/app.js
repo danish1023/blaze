@@ -45,3 +45,34 @@ var app  = new Framework7({
 var mainView = app.views.create('.view-main', {
   url: '/'
 });
+
+var options = {
+  "datePrefix": '__DATE:',
+  "fieldValueDelete": "__DELETE",
+  "fieldValueServerTimestamp" : "__SERVERTIMESTAMP",
+  "persist": true,
+  "config" : {}
+};
+ 
+if (cordova.platformId === "browser") {
+ 
+  options.config = {
+    apiKey: "AIzaSyAzo0k7orQei71dYHG6kSr0hV1ZGR2-yeI",
+    authDomain: "localhost",
+    projectId: "blazefirestore"
+  };
+}
+
+Firestore.initialise(options).then(function(db) {
+  // Add a second document with a generated ID.
+  db.get().collection("users").add({
+      name: "Alan",
+      email: "alan@xyz.com"
+  })
+  .then(function(docRef) {
+      alert("Document written with ID: ", docRef.id);
+  })
+  .catch(function(error) {
+      alert("Error adding document: ", error);
+  });
+});
