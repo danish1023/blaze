@@ -12,7 +12,7 @@ var app  = new Framework7({
     xhrCache: false,
   },
   statusbar: {
-    androidTextColor: 'white',
+    androidTextColor: 'black',
     androidBackgroundColor: '#BEBEBE',
   },
   dialog: {
