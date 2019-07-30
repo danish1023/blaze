@@ -54,7 +54,8 @@ module.exports.metadata =
     "cordova-plugin-x-toast": "2.7.2",
     "cordova-plugin-dialogs": "2.0.2",
     "cordova-plugin-spinner": "1.1.0",
-    "cordova-plugin-device": "2.0.3"
+    "cordova-plugin-device": "2.0.3",
+    "cordova-support-google-services": "1.3.1"
 }
 // BOTTOM OF METADATA
 });

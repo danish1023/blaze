@@ -49,7 +49,8 @@ module.exports.metadata =
   "cordova-plugin-spinner": "1.1.0",
   "cordova-plugin-whitelist": "1.3.4",
   "cordova-plugin-x-toast": "2.7.2",
-  "phonegap-plugin-push": "2.2.3"
+  "phonegap-plugin-push": "2.2.3",
+  "cordova-support-google-services": "1.3.1"
 };
 // BOTTOM OF METADATA
 });
