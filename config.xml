@@ -34,5 +34,6 @@
     <plugin name="cordova-plugin-device" spec="~2.0.2" />
     <plugin name="cordova-plugin-whitelist" spec="~1.3.3" />
     <plugin name="phonegap-plugin-push" spec="~2.2.3" />
+    <plugin name="cordova-plugin-firestore" spec="~3.0.0" />
     <engine name="ios" spec="^4.5.5" />
 </widget>

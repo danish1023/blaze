@@ -1,0 +1,46 @@
+{
+  "name": "cordova-plugin-firestore",
+  "version": "3.0.0",
+  "cordova": {
+    "id": "cordova-plugin-firestore",
+    "platforms": [
+      "android",
+      "ios",
+      "browser"
+    ]
+  },
+  "engines": {
+    "cordovaDependencies": {
+      "0.0.7": {
+        "cordova": ">=7.0.0",
+        "cordova-android": ">=5.0.0",
+        "cordova-ios": ">=4.0.0"
+      }
+    }
+  },
+  "description": "A Google Firebase Firestore plugin",
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-jshint": "^1.1.0",
+    "jest": "^24.7.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ReallySmallSoftware/cordova-plugin-firestore.git"
+  },
+  "author": "Richard Windley <richard.windley@gmail.com> (http://www.reallysmall.co.uk)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ReallySmallSoftware/cordova-plugin-firestore/issues"
+  },
+  "homepage": "https://github.com/ReallySmallSoftware/cordova-plugin-firestore",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-browser"
+  ],
+  "scripts": {
+    "test": "jest"
+  }
+}
