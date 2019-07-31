@@ -57,12 +57,12 @@ function shareApp() {
 }
 
 function rateApp() {
-  AppRate.preferences.storeAppURL = {
-    ios: '<my_app_id>',
-    android: 'market://details?id=com.techstreet.utility',
-  };
-   
-  AppRate.promptForRating();
+  if(device.platform == 'Android'){
+    window.location.href= "market://details?id=com.techstreet.utility";
+  }
+  else{
+    console.log(device.platform + ' does not support this functionality');
+  }
 }
 
 // Initialize Cloud Firestore through Firebase
