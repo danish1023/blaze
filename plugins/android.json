@@ -16,10 +16,25 @@
         "cordova-plugin-x-socialsharing": {
             "ANDROID_SUPPORT_V4_VERSION": "24.1.1+",
             "PACKAGE_NAME": "io.md.blaze"
+        },
+        "cordova-plugin-apprate": {
+            "PACKAGE_NAME": "io.md.blaze"
         }
     },
     "dependent_plugins": {
         "es6-promise-plugin": {
+            "PACKAGE_NAME": "io.md.blaze"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "io.md.blaze"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "io.md.blaze"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "io.md.blaze"
+        },
+        "cordova-plugin-nativestorage": {
             "PACKAGE_NAME": "io.md.blaze"
         }
     }

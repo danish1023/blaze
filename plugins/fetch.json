@@ -137,13 +137,47 @@
         },
         "is_top_level": true,
         "variables": {
-            "ANDROID_SUPPORT_V4_VERSION": "24.1.1+"
+            "ANDROID_SUPPORT_V4_VERSION": "24.1.1+",
+            "PHOTO_LIBRARY_ADD_USAGE_DESCRIPTION": "This app requires photo library access to function properly.",
+            "PHOTO_LIBRARY_USAGE_DESCRIPTION": "This app requires photo library access to function properly."
         }
     },
     "es6-promise-plugin": {
         "source": {
             "type": "registry",
             "id": "es6-promise-plugin"
+        },
+        "is_top_level": false,
+        "variables": {}
+    },
+    "cordova-plugin-apprate": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-apprate@~1.4.0"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-globalization": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-globalization"
+        },
+        "is_top_level": false,
+        "variables": {}
+    },
+    "cordova-plugin-inappbrowser": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-inappbrowser"
+        },
+        "is_top_level": false,
+        "variables": {}
+    },
+    "cordova-plugin-nativestorage": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-nativestorage"
         },
         "is_top_level": false,
         "variables": {}

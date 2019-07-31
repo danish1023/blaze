@@ -3,6 +3,9 @@
     <feature name="Device">
         <param name="browser-package" value="Device" />
     </feature>
+    <feature name="NativeStorage">
+        <param name="browser-package" value="NativeStorage" />
+    </feature>
     <name>Blaze</name>
     <description>
         A sample firebase application for developer.

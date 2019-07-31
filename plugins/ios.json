@@ -32,10 +32,22 @@
             "PHOTO_LIBRARY_ADD_USAGE_DESCRIPTION": "This app requires photo library access to function properly.",
             "PHOTO_LIBRARY_USAGE_DESCRIPTION": "This app requires photo library access to function properly.",
             "PACKAGE_NAME": "io.md.blaze"
+        },
+        "cordova-plugin-apprate": {
+            "PACKAGE_NAME": "io.md.blaze"
         }
     },
     "dependent_plugins": {
         "es6-promise-plugin": {
+            "PACKAGE_NAME": "io.md.blaze"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "io.md.blaze"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "io.md.blaze"
+        },
+        "cordova-plugin-nativestorage": {
             "PACKAGE_NAME": "io.md.blaze"
         }
     }

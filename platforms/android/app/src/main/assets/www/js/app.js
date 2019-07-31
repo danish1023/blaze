@@ -56,6 +56,18 @@ function shareApp() {
   window.plugins.socialsharing.shareWithOptions(options, onSuccess, onError);
 }
 
+function rateApp() {
+  AppRate.preferences.storeAppURL = {
+    ios: '<my_app_id>',
+    android: 'market://details?id=com.techstreet.utility',
+    windows: 'ms-windows-store://pdp/?ProductId=<the apps Store ID>',
+    blackberry: 'appworld://content/[App Id]/',
+    windows8: 'ms-windows-store:Review?name=<the Package Family Name of the application>'
+  };
+   
+  AppRate.promptForRating(false);
+}
+
 // Initialize Cloud Firestore through Firebase
 firebase.initializeApp({
   apiKey: "AIzaSyAzo0k7orQei71dYHG6kSr0hV1ZGR2-yeI",
