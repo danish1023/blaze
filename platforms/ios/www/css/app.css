@@ -13,7 +13,10 @@
 .no-arrow:before {
     display: none !important;
 }
-.navbar .right a.icon-only{
-    width: 36px !important;
+.navbar .right a{
+    width: 40px !important;
     padding: 0 !important;
+}
+.navbar .right a:before{
+    display: none !important;
 }
