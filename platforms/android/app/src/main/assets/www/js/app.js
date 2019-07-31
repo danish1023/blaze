@@ -46,6 +46,16 @@ var mainView = app.views.create('.view-main', {
   url: '/'
 });
 
+function shareApp() {
+  var url = 'https://play.google.com/store/apps/details?id=com.techstreet.utility';
+  var options = {
+    url: url,
+  };
+  var onSuccess = function (result) { };
+  var onError = function (msg) { };
+  window.plugins.socialsharing.shareWithOptions(options, onSuccess, onError);
+}
+
 // Initialize Cloud Firestore through Firebase
 firebase.initializeApp({
   apiKey: "AIzaSyAzo0k7orQei71dYHG6kSr0hV1ZGR2-yeI",

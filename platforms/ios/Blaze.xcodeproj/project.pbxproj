@@ -17,6 +17,10 @@
 		3047A5141AB8059700498E2A /* build.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5111AB8059700498E2A /* build.xcconfig */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
 		52F2542DE80B4C1988B8062C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD5A9D6FC77647BA901027C9 /* GoogleService-Info.plist */; };
+		3555A86C02464CACBC726B07 /* NSString+SSURLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = A185DCDFC92D46E9A2C3D5AB /* NSString+SSURLEncoding.m */; };
+		3008FD7C6F4346E6B3BCA1E6 /* SocialSharing.m in Sources */ = {isa = PBXBuildFile; fileRef = 891CE7780FD9474096952A00 /* SocialSharing.m */; };
+		162063FC22664B0BBD3CE859 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C611CBA64AD4941BCD3129B /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F419709DBD804C3AB39A10DA /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EA3FAA82A84095AA1941C4 /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,12 @@
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "Blaze/config.xml"; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		BD5A9D6FC77647BA901027C9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; name = "GoogleService-Info.plist"; path = "GoogleService-Info.plist"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = text.plist.xml; explicitFileType = undefined; includeInIndex = 0; };
+		A185DCDFC92D46E9A2C3D5AB /* NSString+SSURLEncoding.m */ = {isa = PBXFileReference; name = "NSString+SSURLEncoding.m"; path = "cordova-plugin-x-socialsharing/NSString+SSURLEncoding.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		891CE7780FD9474096952A00 /* SocialSharing.m */ = {isa = PBXFileReference; name = "SocialSharing.m"; path = "cordova-plugin-x-socialsharing/SocialSharing.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		7178442D76EC45EB80FA9452 /* NSString+SSURLEncoding.h */ = {isa = PBXFileReference; name = "NSString+SSURLEncoding.h"; path = "cordova-plugin-x-socialsharing/NSString+SSURLEncoding.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		E17A23E332C44DC8A96056DB /* SocialSharing.h */ = {isa = PBXFileReference; name = "SocialSharing.h"; path = "cordova-plugin-x-socialsharing/SocialSharing.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		4C611CBA64AD4941BCD3129B /* Social.framework */ = {isa = PBXFileReference; name = "Social.framework"; path = "System/Library/Frameworks/Social.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		83EA3FAA82A84095AA1941C4 /* MessageUI.framework */ = {isa = PBXFileReference; name = "MessageUI.framework"; path = "System/Library/Frameworks/MessageUI.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +76,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				162063FC22664B0BBD3CE859 /* Social.framework in Frameworks */,
+				F419709DBD804C3AB39A10DA /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +149,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4C611CBA64AD4941BCD3129B /* Social.framework */,
+				83EA3FAA82A84095AA1941C4 /* MessageUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,6 +176,10 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				A185DCDFC92D46E9A2C3D5AB /* NSString+SSURLEncoding.m */,
+				891CE7780FD9474096952A00 /* SocialSharing.m */,
+				7178442D76EC45EB80FA9452 /* NSString+SSURLEncoding.h */,
+				E17A23E332C44DC8A96056DB /* SocialSharing.h */,
 			);
 			name = Plugins;
 			path = "Blaze/Plugins";
@@ -275,6 +293,8 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				3555A86C02464CACBC726B07 /* NSString+SSURLEncoding.m in Sources */,
+				3008FD7C6F4346E6B3BCA1E6 /* SocialSharing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
